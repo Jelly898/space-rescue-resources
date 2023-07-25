@@ -15,10 +15,10 @@ class Title(RoomObject):
         #Register for key events
         self.handle_key_events = True
 
-        def key_pressed(self, key):
-            """
-            If the key pressed is space the game will start
-            """
+    def key_pressed(self, key):
+        """
+        If the key pressed is space the game will start
+        """
 
-            if key[pygame.K_SPACE]:
-                self.room.running = False
+        if key[pygame.K_SPACE]:
+            self.room.running = False
