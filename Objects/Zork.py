@@ -22,3 +22,7 @@ class Zork(RoomObject):
     def keep_in_room(self):
         if self.y < 0 or self.y > Globals.SCREEN_HEIGHT - self.height:
             self.y_speed *= -1
+
+    def step(self):
+
+        self.keep_in_room()
